@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 Hello Boulder!
+	input(id="countryLoad", type="submit", value="Load Countries")
+	div
+		ul#countryList
+
+block scripts
+	script(src="/javascripts/main.js")
