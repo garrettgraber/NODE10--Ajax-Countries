@@ -7,7 +7,7 @@ console.log('TEST');
 
 		e.preventDefault();
 
-		$.post('/countries', function(data) {
+		$.get('/countries', function(data) {
 			console.log('Post successful');
 			console.log(data.length);
 			console.log(typeof(data));

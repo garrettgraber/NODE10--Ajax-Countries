@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 
-app.post('/countries', function(req, res) {
+app.get('/countries', function(req, res) {
 	console.log('post route part is working');
 	console.log('Countries: ');
 	console.log(countries);
