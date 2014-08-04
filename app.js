@@ -5,12 +5,15 @@ var mongoose = require('mongoose');
 var indexController = require('./controllers/index.js');
 var countries = require('./models/countries.json');
 
+mongoose.connect('mongodb://localhost/country');
 
 var app = express();
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
+
+indexController.serverStart();
 
 
 app.get('/', indexController.index);

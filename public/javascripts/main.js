@@ -38,6 +38,7 @@ console.log('TEST');
 			console.log('Post successful');
 
 			console.log('Data from server: ', data);
+			console.log('Data type: ', typeof(data));
 			console.log('Data keys: ', Object.keys(data) );
 			console.log('Data name: ', data.name);
 			console.log('Data frenchName: ' + data.frenchName);
